@@ -1,0 +1,169 @@
+/* Cartoon World Website */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#6dd5fa,#ffffff,#ff9ff3);
+background-size:400% 400%;
+animation:bgMove 10s infinite;
+color:#333;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#ff6b81;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:32px;
+color:white;
+font-weight:bold;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:yellow;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h2{
+font-size:50px;
+color:#ff4757;
+animation:bounce 2s infinite;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#ff4757;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff6b81;
+transform:scale(1.1);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+font-size:26px;
+color:#ff4757;
+}
+
+.card p{
+padding:0 15px 20px;
+font-size:18px;
+}
+
+footer{
+background:#ff6b81;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+font-size:18px;
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+nav ul li{
+margin:10px 0;
+}
+
+.hero h2{
+font-size:35px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
