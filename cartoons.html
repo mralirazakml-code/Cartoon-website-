@@ -1,43 +1,97 @@
-// Cartoon World JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoons - Cartoon World</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-// Welcome message
-window.onload = function () {
-    alert("🎉 Welcome to Cartoon World!");
-};
+<body>
 
-// Smooth button animation
-const buttons = document.querySelectorAll(".btn");
+<header>
+<h1 class="logo">🌈 Cartoon World</h1>
 
-buttons.forEach(button => {
-    button.addEventListener("mouseover", () => {
-        button.style.transform = "scale(1.1)";
-    });
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="cartoons.html">Cartoons</a></li>
+<li><a href="popular.html">Popular</a></li>
+<li><a href="trailer.html">Trailers</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-    button.addEventListener("mouseout", () => {
-        button.style.transform = "scale(1)";
-    });
-});
+<section class="hero">
+<h2>🎭 Explore Cartoons</h2>
+<p>Choose your favorite cartoon and enjoy exciting adventures.</p>
+</section>
 
-// Card animation
-const cards = document.querySelectorAll(".card");
+<section class="cards">
 
-cards.forEach(card => {
-    card.addEventListener("mouseenter", () => {
-        card.style.transform = "translateY(-10px) scale(1.05)";
-    });
+<div class="card">
+<h3>🐭 Tom & Jerry</h3>
+<p>Comedy | Adventure | Classic Cartoon</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
 
-    card.addEventListener("mouseleave", () => {
-        card.style.transform = "translateY(0px) scale(1)";
-    });
-});
+<div class="card">
+<h3>🤖 Doraemon</h3>
+<p>Adventure | Family | Sci-Fi</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
 
-// Scroll animation
-window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
+<div class="card">
+<h3>😂 Shinchan</h3>
+<p>Comedy | Kids | Family</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
 
-    if (window.scrollY > 50) {
-        header.style.background = "#ff4757";
-    } else {
-        header.style.background = "#ff6b81";
-    }
-});
+<div class="card">
+<h3>⚡ Pokémon</h3>
+<p>Action | Fantasy | Adventure</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+<div class="card">
+<h3>👦 Ben 10</h3>
+<p>Action | Superhero | Adventure</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+<div class="card">
+<h3>🐭 Mickey Mouse</h3>
+<p>Classic | Family | Comedy</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+<div class="card">
+<h3>🧽 SpongeBob SquarePants</h3>
+<p>Comedy | Underwater Adventure</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+<div class="card">
+<h3>👻 Scooby-Doo</h3>
+<p>Mystery | Comedy | Adventure</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+<div class="card">
+<h3>🐰 Looney Tunes</h3>
+<p>Classic | Comedy | Family</p>
+<a href="#" class="btn">Watch Now</a>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Cartoon World | Made with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
