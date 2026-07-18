@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoon Trailers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1 class="logo">🎬 Cartoon World</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="cartoons.html">Cartoons</a></li>
+<li><a href="popular.html">Popular</a></li>
+<li><a href="trailer.html">Trailers</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>🎥 Cartoon Trailers</h2>
+
+<p>Watch exciting trailers of your favorite cartoons before enjoying the full episodes.</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>🐭 Tom & Jerry Trailer</h3>
+
+<iframe width="100%" height="250"
+src="https://www.youtube.com/embed/kP9TfCWaQT4"
+title="Tom and Jerry Trailer"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p>Enjoy the funniest cat-and-mouse adventures ever created.</p>
+
+</div>
+
+<div class="card">
+<h3>🤖 Doraemon Trailer</h3>
+
+<iframe width="100%" height="250"
+src="https://www.youtube.com/embed/fFGS4zZWGoA"
+title="Doraemon Trailer"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p>Travel to the future with Doraemon and his amazing gadgets.</p>
+
+</div>
+
+<div class="card">
+<h3>⚡ Pokémon Trailer</h3>
+
+<iframe width="100%" height="250"
+src="https://www.youtube.com/embed/rg6CiPI6h2g"
+title="Pokemon Trailer"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p>Join Ash and Pikachu on an unforgettable adventure.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Cartoon World | Watch • Enjoy • Smile 😊</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
